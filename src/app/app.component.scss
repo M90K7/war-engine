@@ -1,0 +1,54 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.3fr 3.3fr 1fr;
+    grid-template-areas: "MenuBar MenuBar MenuBar MenuBar" "ToolBox ToolBox ToolBox ToolBox" "GameTree GameController GameController Properties" "GameTree SceneView SceneView Properties" "Projects Projects Projects Projects";
+  }
+  
+  .MenuBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "MenuBar-1 MenuBar-1 MenuBar-2" "MenuBar-1 MenuBar-1 MenuBar-2";
+    grid-area: MenuBar;
+  }
+  
+  .MenuBar-1 { grid-area: MenuBar-1; }
+  
+  .MenuBar-2 { grid-area: MenuBar-2; }
+  
+  .ToolBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "ToolBox-1 ToolBox-2 ToolBox-3" "ToolBox-1 ToolBox-2 ToolBox-3";
+    grid-area: ToolBox;
+  }
+  
+  .ToolBox-2 { grid-area: ToolBox-2; }
+  
+  .ToolBox-3 { grid-area: ToolBox-3; }
+  
+  .ToolBox-1 { grid-area: ToolBox-1; }
+  
+  .GameTree { grid-area: GameTree; }
+  
+  .GameController {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "GameController-1 GameController-2 GameController-3" "GameController-1 GameController-2 GameController-3";
+    grid-area: GameController;
+  }
+  
+  .GameController-1 { grid-area: GameController-1; }
+  
+  .GameController-2 { grid-area: GameController-2; }
+  
+  .GameController-3 { grid-area: GameController-3; }
+  
+  .SceneView { grid-area: SceneView; }
+  
+  .Properties { grid-area: Properties; }
+  
+  .Projects { grid-area: Projects; }

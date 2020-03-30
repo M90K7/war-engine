@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "war-engine": {
@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets-cli/font-awesome-v5.9.0/css/all.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -44,15 +45,15 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
-              "namedChunks": false,
+              "namedChunks": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "war-engine"
+    }
+  },
+  "defaultProject": "war-engine",
+  "cli": {
+    "analytics": "d0899222-6342-494b-ae5f-87373e0cfdf5"
+  }
 }
